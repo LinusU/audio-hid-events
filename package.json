@@ -1,0 +1,17 @@
+{
+  "name": "audio-hid-events",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "LinusU/audio-hid-events",
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "dependencies": {
+    "node-hid": "^0.5.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "proxyquire": "^1.7.7",
+    "standard": "^7.0.1"
+  }
+}
