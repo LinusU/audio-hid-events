@@ -14,11 +14,11 @@ var handlers = [
         var mask = data[0]
 
         if (!(state & 0x01) && (mask & 0x01)) {
-          module.exports.emit('volume-up')
+          module.exports.emit('mute')
         }
 
         if (!(state & 0x02) && (mask & 0x02)) {
-          module.exports.emit('mute')
+          module.exports.emit('volume-up')
         }
 
         if (!(state & 0x04) && (mask & 0x04)) {
