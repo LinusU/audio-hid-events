@@ -20,10 +20,10 @@ var testCases = [
     emitter: new EventEmitter(),
     events: [
       ['data', new Buffer([0x01])],
-      ['hid', 'volume-up'],
+      ['hid', 'mute'],
       ['data', new Buffer([0x00])],
       ['data', new Buffer([0x02])],
-      ['hid', 'mute'],
+      ['hid', 'volume-up'],
       ['data', new Buffer([0x00])],
       ['data', new Buffer([0x04])],
       ['hid', 'volume-down'],
