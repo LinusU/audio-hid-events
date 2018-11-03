@@ -19,15 +19,15 @@ var testCases = [
     productId: 0x29c6,
     emitter: new EventEmitter(),
     events: [
-      ['data', new Buffer([0x01])],
+      ['data', Buffer.from([0x01])],
       ['hid', 'mute'],
-      ['data', new Buffer([0x00])],
-      ['data', new Buffer([0x02])],
+      ['data', Buffer.from([0x00])],
+      ['data', Buffer.from([0x02])],
       ['hid', 'volume-up'],
-      ['data', new Buffer([0x00])],
-      ['data', new Buffer([0x04])],
+      ['data', Buffer.from([0x00])],
+      ['data', Buffer.from([0x04])],
       ['hid', 'volume-down'],
-      ['data', new Buffer([0x00])]
+      ['data', Buffer.from([0x00])]
     ]
   }
 ]
@@ -66,7 +66,7 @@ describe('Audio HID Events', function () {
         }
 
         if (ev[0] === 'hid') {
-          assert.equal(lastEvent, ev[1])
+          assert.strictEqual(lastEvent, ev[1])
         }
       })
     })

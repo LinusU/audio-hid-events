@@ -10,8 +10,8 @@
     "node-hid": "^0.7.3"
   },
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "proxyquire": "^1.7.7",
-    "standard": "^7.0.1"
+    "mocha": "^5.2.0",
+    "proxyquire": "^2.1.0",
+    "standard": "^12.0.1"
   }
 }
